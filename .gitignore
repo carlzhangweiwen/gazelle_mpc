@@ -4,4 +4,5 @@ src/bin/*
 __pycache__
 log
 scripts/nn/dataset/
+scripts/nn/mnist/dataset/
 .idea
