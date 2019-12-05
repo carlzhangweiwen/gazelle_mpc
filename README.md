@@ -37,3 +37,8 @@ Anaconda3 on a machine that had a GPU.
 ## Running examples
 
 Have a look at the demo folder to see some examples.
+```
+cd scripts/nn/mnist/
+export PYTHONPATH=/home/carl/Documents/github/gazelle_mpc/scripts/nn:$PYTHONPATH
+python train.py
+```
