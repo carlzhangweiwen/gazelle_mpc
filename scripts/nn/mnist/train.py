@@ -87,8 +87,8 @@ try:
                 pred = output.data.max(1)[1]  # get the index of the max log-probability
                 correct = pred.cpu().eq(indx_target).sum()
                 acc = correct * 1.0 / len(data)
-                print('Train Epoch: {} [{}/{}] Loss: {:.6f} Acc: {:.4f} lr: {:.2e}'.format(
-                    epoch, batch_idx * len(data), len(train_loader.dataset),
+                print('Train Epoch: {} ,batch_idx:{} [{}/{}] Loss: {:.6f} Acc: {:.4f} lr: {:.2e}'.format(
+                    epoch, batch_idx, batch_idx * len(data), len(train_loader.dataset),
                     loss.data, acc, optimizer.param_groups[0]['lr']))
 
         elapse_time = time.time() - t_begin
